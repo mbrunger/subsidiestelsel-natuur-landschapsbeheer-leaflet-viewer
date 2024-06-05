@@ -310,7 +310,7 @@ for (var i = 0; i < grades.length; i++) {
 div.innerHTML +=
 '<i style="background:' + getColor1(grades[i]) + '"></i> ' +
 grades[i] + '<br>';
-}L.DomEvent.on(div, 'mousewheel', L.DomEvent.stopPropagation);
+}L.DomEvent.on(div, 'wheel', L.DomEvent.stopPropagation);
 return div;
 };
 legenda.addTo(map);
@@ -328,13 +328,13 @@ for (var i = 0; i < grades.length; i++) {
 div.innerHTML +=
 '<i style="background:' + getColor2(grades[i]) + '"></i> ' +
 labels[i] + '<br>';
-}L.DomEvent.on(div, 'mousewheel', L.DomEvent.stopPropagation);
+}
 div.innerHTML += '<br><h5>Landschapselementtypen</h5>'
 for (var i = 0; i < grades2.length; i++) {
 div.innerHTML +=
 '<i style="background:' + getColor2(grades[i]) + '"></i> ' +
 labels2[i] + '<br>';
-}L.DomEvent.on(div, 'mousewheel', L.DomEvent.stopPropagation);
+}L.DomEvent.on(div, 'wheel', L.DomEvent.stopPropagation);
 return div;
 };
           
@@ -349,7 +349,7 @@ for (var i = 0; i < grades.length; i++) {
 div.innerHTML +=
 '<i style="background:' + getColor3(grades[i]) + '"></i> ' +
 grades[i] + '<br>';
-}L.DomEvent.on(div, 'mousewheel', L.DomEvent.stopPropagation);
+}L.DomEvent.on(div, 'wheel', L.DomEvent.stopPropagation);
 return div;
 };
 
